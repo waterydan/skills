@@ -1,0 +1,48 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE state
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Dependencies and package manager caches
+node_modules/
+.pnpm-store/
+
+# Build and test output
+dist/
+build/
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local temporary files
+.cache/
+.tmp/
+tmp/
+
+# Agent specific files
+openai.yaml
