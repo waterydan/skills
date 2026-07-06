@@ -12,22 +12,26 @@ Use this skill to interview the user, document the design, expose tradeoffs, and
 
 ## Workflow
 
-1. Use the `$grill-with-docs` skill first when it is available.
+1. Switch to planner mode when the environment supports it.
+If planner mode is unavailable, continue in the current mode while following this planning-only workflow.
+2. Use the `$grill-with-docs` skill first when it is available.
 If it is unavailable, run an equivalent focused interview and capture the important decisions in the conversation.
-2. Read enough local code, docs, tests, and configuration to make the plan concrete.
+3. Read enough local code, docs, tests, and configuration to make the plan concrete.
 Prefer project vocabulary, existing architecture, and named files over abstract guesses.
-3. Use the Context7 MCP server for current documentation before planning around external libraries, frameworks, SDKs, APIs, CLIs, or cloud services.
-4. Ask concise follow-up questions when requirements, constraints, or acceptance criteria are unclear.
+4. Use the Context7 MCP server for current documentation before planning around external libraries, frameworks, SDKs, APIs, CLIs, or cloud services.
+5. Ask concise follow-up questions when requirements, constraints, or acceptance criteria are unclear.
 Do not assume missing requirements when the answer materially changes the design.
-5. Produce a final solution design only after the requirements are sharp enough.
+6. Produce a final solution design only after the requirements are sharp enough.
 Do not modify source files, tests, configs, generated assets, or implementation docs before the user confirms the plan.
-Planning notes and domain docs produced by `$grill-with-docs` are allowed.
-6. Ask for explicit confirmation at the end.
+Keep planning output in the planner-mode plan response when planner mode is available.
+Do not create a separate plan file unless the user explicitly asks for one.
+7. Ask for explicit confirmation at the end.
 Stop after the plan unless the user confirms implementation.
 
 ## Final Solution Design
 
-Present the final design as one high-level fenced code block.
+Present the final design as the planner-mode plan output when planner mode is available.
+If planner mode is unavailable, present it as one high-level fenced code block in the conversation.
 Do not include actual source code, patches, or function bodies.
 Do not include implementation commands unless they are validation steps.
 
