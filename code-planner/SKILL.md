@@ -28,13 +28,12 @@ Stop after the plan unless the user confirms implementation.
 ## Final Solution Design
 
 Present the final design as one high-level fenced code block.
-Use `text` as the fence language.
 Do not include actual source code, patches, or function bodies.
 Do not include implementation commands unless they are validation steps.
 
 Use this structure:
 
-```text
+```
 Solution Design
 
 Summary
